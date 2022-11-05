@@ -1,8 +1,8 @@
 :root {
     --bg_color: gray;
     --color: white;
+    --section_bg_color: rgb(152, 151, 151);
 }
-
 
 
 .header-container {
@@ -38,18 +38,22 @@
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
-.header-icon {
+.header-logo .icon {
     font-size: 48px;
+}
+
+.icon {
+
     font-weight: 800;
     text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
 }
 
-.header-icon:not(:first-child) {
+.icon:not(:first-child) {
     margin-left: -0.23em;
 }
 
 nav {
-    width: 30%;
+    width: 20%;
 }
 
 .header-links {
@@ -73,6 +77,46 @@ nav {
 
 .main-section {
     height: 100vh;
-    background-color: var(--bg_color);
+    background-color: var(--section_bg_color);
     color: var(--color);
+}
+
+#main-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg_color);
+}
+
+.main-icon .icon {
+    font-size: 21em;
+}
+
+.main-quote p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 1.3em;
+    letter-spacing: .05em;
+    animation: typing 5s steps(40, end);
+}
+
+.arrow {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 250px solid transparent;
+    border-left: 100vw solid var(--section_bg_color);
+    margin-top: -250px;
+}
+
+@keyframes typing {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
 }
