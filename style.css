@@ -1,84 +1,11 @@
-:root {
-    --bg_color: gray;
-    --color: white;
-    --section_bg_color: rgb(152, 151, 151);
-}
-
-
-.header-container {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    height: 110px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bg_color);
-    box-shadow: 0px 5px 5px rgb(152, 151, 151);
-    color: var(--color);
-}
-
-.header-logo {
-    width: auto;
-    text-align: center;
-    padding-left: 20px;
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Old versions of Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-}
-
-.header-logo .icon {
-    font-size: 48px;
-}
-
-.icon {
-
-    font-weight: 800;
-    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
-}
-
-.icon:not(:first-child) {
-    margin-left: -0.23em;
-}
-
-nav {
-    width: 20%;
-}
-
-.header-links {
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.header-links a {
-    text-decoration: none;
-    color: rgb(181, 181, 181);
-    font-size: 1.3rem;
-    transition: all 0.5s ease;
-}
-
-.header-links a:hover {
-    color: var(--color);
-}
-
 /*----- main -----*/
-
+/* ----- logo -----*/
 .main-section {
     height: 100vh;
     background-color: var(--section_bg_color);
     color: var(--color);
+    padding: 7%;
+    border-top: 3px solid black;
 }
 
 #main-logo {
@@ -119,4 +46,39 @@ nav {
     100% {
         width: 100%
     }
+}
+
+/* ----- services -----*/
+#main-services {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+.section-title h1 {
+    border-bottom: 1px solid var(--color);
+    width: 400px;
+}
+
+.services-info {
+    width: 50%;
+    font-size: 1.3em;
+}
+
+.services-about {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.services-option {
+    margin-left: 25px;
+}
+
+.services-option li {
+    margin-top: 5px;
 }
