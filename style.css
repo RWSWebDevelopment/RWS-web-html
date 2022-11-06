@@ -48,31 +48,38 @@
     }
 }
 
-/* ----- services -----*/
-#main-services {
-    display: flex;
-    flex-direction: column;
-}
-
 .section-title {
-    font-size: 2.5em;
     font-variant: small-caps;
     margin-bottom: 10px;
-}
-
-.section-title h1 {
-    border-bottom: 1px solid var(--color);
     width: 400px;
+    border-bottom: 1px solid var(--color);
 }
 
-.services-info {
+.section-title span {
+    font-size: 3.5em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+}
+
+.main-info {
     width: 50%;
     font-size: 1.3em;
 }
 
-.services-about {
+.main-about {
     text-align: justify;
     margin-bottom: 25px;
+}
+
+.main-section a {
+    color: var(--color)
+}
+
+/* ----- services -----*/
+#main-services {
+    display: flex;
+    flex-direction: column;
 }
 
 .services-option {
@@ -82,3 +89,5 @@
 .services-option li {
     margin-top: 5px;
 }
+
+/* portfolio */
